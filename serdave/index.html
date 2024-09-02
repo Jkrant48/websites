@@ -5,7 +5,10 @@
     <link rel="icon" type="image/x-icon" href="images/SerDave-symbol.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Author" content="Jonathan Nkansah Koranteng" />
-    <meta name="description" content="SerDave Naturelle. Experts in Locs and general natural hair care." />
+    <meta
+      name="description"
+      content="SerDave Naturelle. Experts in Locs and general natural hair care."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +17,7 @@
     />
     <title>SerDave Hair | Home</title>
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
   </head>
   <body>
     <div id="content">
@@ -48,7 +51,6 @@
         </div>
         <img class="hero-image" src="images/woman.png" alt="woman" />
       </div>
-
       <main>
         <div id="services">
           <div class="s-heading">
@@ -76,20 +78,32 @@
         <div id="products">
           <h2>Our Products</h2>
           <div class="p-items">
-            <div class="p-card">
-              <img src="images/elementor-placeholder-image.webp" alt="image" />
-              <section>
-                <h6>Skincare Essentials</h6>
-                <p>Explore our range of premium skincare products</p>
-              </section>
-            </div>
-            <div class="p-card">
-              <img src="images/elementor-placeholder-image.webp" alt="image" />
-              <section>
-                <h6>Haircare Productss</h6>
-                <p>Discover our collection of high-quality haircare products</p>
-              </section>
-            </div>
+            <a href="shop.html"
+              ><div class="p-card">
+                <img
+                  src="images/elementor-placeholder-image.webp"
+                  alt="image"
+                />
+                <section>
+                  <h6>Skincare Essentials</h6>
+                  <p>Explore our range of premium skincare products</p>
+                </section>
+              </div>
+            </a>
+            <a href="shop.html"
+              ><div class="p-card">
+                <img
+                  src="images/elementor-placeholder-image.webp"
+                  alt="image"
+                />
+                <section>
+                  <h6>Haircare Productss</h6>
+                  <p>
+                    Discover our collection of high-quality haircare products
+                  </p>
+                </section>
+              </div>
+            </a>
           </div>
         </div>
         <section id="work">
@@ -127,7 +141,8 @@
               placeholder="Enter your email"
             />
             <label for="msg">Message</label>
-            <textarea name="msg" id="msg"></textarea>
+            <input type="text" name="msg" id="msg" placeholder="Type your Message" />
+
             <input class="submit-btn" type="button" value="Send Message" />
           </form>
         </div>

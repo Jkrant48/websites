@@ -17,7 +17,7 @@
 /*general*/
 a{
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 
@@ -42,7 +42,7 @@ p, a, h6 {
 /*Home Page(Some of this remained the same
 for other pages too)*/
 .logo {
-    width: 10rem;
+    width: 100px;
     padding: 20px;
     margin-left: 20px;
 }
@@ -74,8 +74,13 @@ header {
 
 header, #hero {
     background-color: var(--secondary-color);
+    
 }
 
+#hero {
+   position: relative;
+   overflow: hidden; 
+}
 
 #welcome-container{
     background-color: rgba(0, 0, 0, 0.6);
@@ -101,21 +106,15 @@ header, #hero {
     background-color: rgba(0,0,0, 0.2);
     text-align: center;
     padding: 3rem;
-}
-
-#hero-msg img {
-    width: 40%;
     position: relative;
 }
 
-#hero-msg p {
-    position: absolute;
-    bottom: .3rem;
-    left: 32rem;
+#hero-msg img {
+   max-width: 40%;
 }
 
 .hero-image {
-    width: 44.75%;
+    max-width: 50%;
     position: absolute;
     top: 0;
     right: 0;
@@ -181,6 +180,7 @@ featured products card*/
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
     margin-bottom: 4rem;
+    justify-content: center;
 }
 
 /*add the f-card p and h6*/
@@ -199,13 +199,13 @@ featured products card*/
 #services section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
     
 }
 
 /*f-card added*/
 .s-card, .f-card {
-    border: 2px solid rgba(0,0,0, 0.1);
+    border: 1px solid rgba(0,0,0, 0.1);
     display: inline-block;
     width: -moz-fit-content;
     width: fit-content;
@@ -237,6 +237,10 @@ featured products card*/
     padding: 4rem;
 }
 
+#products a {
+    color: var(--primary-color);
+}
+
 #products h2 {
     margin-bottom: 5rem;
 }
@@ -250,7 +254,8 @@ featured products card*/
     display: flex;
     text-align: left;
     gap: .5rem;
-    border: 1px solid rgba(0,0,0, 0.1);
+    border: 1px solid rgba(0,0,0, 0.2);
+    border-radius: 10px;
     padding: 1rem;
 }
 
@@ -266,6 +271,12 @@ featured products card*/
     padding: 7rem;
 }
 
+.w-text p {
+    margin-top: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
+
 #work img {
     width: 50%;
 }
@@ -273,10 +284,10 @@ featured products card*/
 #work a {
     display: inline-block;
     margin-top: 3rem;
-    background-color: var(--secondary-color);
+    background-color: var(--accent1);
     padding: .8rem;
     border-radius: .7rem;
-    color: var(--accent1);
+    color: var(--primary-color);
 }
 
 /*contact us*/
@@ -288,12 +299,15 @@ featured products card*/
     padding: 4rem;
 }
 
+.contact h2 {
+    text-align: center;
+}
+
 .contact form {
     display: flex;
     flex-direction: column;
     text-align: left;
     font-family: var(--paragraph-font);
-    
 }
 
 .contact form label {
@@ -303,18 +317,22 @@ featured products card*/
 
 .contact form input {
     width: 60%;
-    padding: .5rem;
+    padding: .7rem;
     margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
 }
 
 .contact textarea {
     height: 5rem;
     width: 60%;
+    border: none;
 }
 
 .submit-btn {
-    margin: 1rem;
-    
+    margin-top: 2rem;
+    background-color: var(--accent1);
+    color: var(--primary-color);
 }
 
 /*Social media*/
